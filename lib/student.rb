@@ -13,7 +13,7 @@ class Student
 
   def self.all
     sql = <<-SQL
-    SELECTS * FROM 
+    SELECT * FROM 
     students
     SQL
     
