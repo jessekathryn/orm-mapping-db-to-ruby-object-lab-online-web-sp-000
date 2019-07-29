@@ -43,7 +43,8 @@ class Student
     
     DB[:conn].execute(sql).map do |row|
       self.new_from_db(row)
-    end.size
+    sql.size
+    end
   end
   
   def self.all_but_12th
